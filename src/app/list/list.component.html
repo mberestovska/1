@@ -1,0 +1,11 @@
+<div class="row">
+  <div class="col-xs-12">
+      <button type="button" class="btn btn-success" (click)="onDisplayList()">Display List</button>
+      <br>
+      <ul class="list-group" *ngIf="listDisplayed">
+        <a class="list-group-item" *ngFor="let element of shoppingList; let i = index">
+          {{ element.name }} : {{ element.amount }}
+        </a>
+      </ul>
+  </div>
+</div>

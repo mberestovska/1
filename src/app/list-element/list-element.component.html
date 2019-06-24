@@ -1,0 +1,14 @@
+<div class="row">
+  <div class="col-xs-12">
+    <form>
+      <div class="col-xs-6">
+        <input type="text" class="form-control" [(ngModel)]="name" name="name">
+      </div>
+      <div class="col-xs-3">
+        <input type="number" class="form-control" [(ngModel)]="amount" name="amount">
+      </div>
+      <button type="button" class="btn btn-success" (click)="onAddElement()">Add to shopping list</button>
+    </form>
+    <p *ngIf="name">{{ name }} : {{ amount }}</p>
+  </div>
+</div>
